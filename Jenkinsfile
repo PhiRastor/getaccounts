@@ -1,14 +1,21 @@
 pipeline {
   agent any
-  triggers {
-    pollSCM('H/2 * * * *')
-  }
   
   stages {
-    stage('HelloWorld') {
+    stage('Unit Test') {
       steps {
-        echo 'Hello world!'
+        sh "mvn clean test"
       }
     }
+    
+    stage ("Deploy CloudHub") {
+      environment {
+        ANYPOINT_CREDENTIALS = credentials("anypoint.credentials")
+      }
+      steps {
+        sh "mvn deploy -P cloudhub -Dmule.version=4.4.0 -Danypoint.username=${ANYPOINT_CREDENTIALS_USR"} -Danypoint.password=${ANYPOINT_CREDENTIALS_PSW"}"
+      }
+    }
+   
   }
 }
