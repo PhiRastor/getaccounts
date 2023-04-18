@@ -35,7 +35,7 @@
 						<muleVersion>4.4.0</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<applicationName>getAccounts</applicationName>
+						<applicationName>getAccountsFromJenkins</applicationName>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
