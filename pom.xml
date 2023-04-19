@@ -37,7 +37,7 @@
 						<password>${anypoint.password}</password>
 						<applicationName>getAccountsFromJenkins</applicationName>
 						<environment>Sandbox</environment>
-						<workers>1</workers>
+						<workers>${workers}</workers>
 						<workerType>Micro</workerType>
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
