@@ -40,9 +40,22 @@
 						<workerType>Micro</workerType>
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
-                           			 <key>value</key>
-                        			</properties>
+																																										                           			 
+
+
+
+
+
+							<key>value</key>
+																																										                        			
+
+
+
+
+
+						</properties>
 					</cloudHubDeployment>
+					<classifier>---- select project type ----</classifier>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -99,5 +112,4 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-	
 </project>
