@@ -16,12 +16,6 @@
 		<app.runtime>4.4.0-20230320</app.runtime>
 		<mule.maven.plugin.version>3.8.0</mule.maven.plugin.version>
 	</properties>
-	<repositories>
-		<repository>
-		<id>mulesoft-public-repository</id>
-		<url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
-		</repository>
-  	</repositories>
 	<build>
 		<plugins>
 			<plugin>
@@ -87,6 +81,10 @@
 			<name>MuleSoft Releases Repository</name>
 			<url>https://repository.mulesoft.org/releases/</url>
 			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>mulesoft-public-repository</id>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
 		</repository>
 	</repositories>
 
